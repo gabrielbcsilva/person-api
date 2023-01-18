@@ -13,9 +13,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "TB_ADRESS"
-, uniqueConstraints={@UniqueConstraint( name = "iX_CEP_PERSON",  columnNames ={"cep","person_id"})}
-)
+@Table(name = "TB_ADRESS")
 @Getter
 @Setter 
 public class Adress {

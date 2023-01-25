@@ -30,7 +30,7 @@ public class Person {
     @Column(name = "BIRTHDATE",nullable = false)
     private LocalDate birthDate;
 
-    @OneToOne(fetch = FetchType.LAZY, optional = true)
+    @OneToOne( optional = true)
     @JoinColumn(name = "principalAdress", nullable = true)
     private Adress principalAdress;
 }
